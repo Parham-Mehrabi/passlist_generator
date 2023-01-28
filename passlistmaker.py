@@ -5,16 +5,18 @@ from time import sleep
 if '-h' in sys.argv[-1:0:-1]:
     print('tags:'
           '\n\r help,h,H,h*              show this help'
+          '\n\r -w                       specify a directory to write the passlist to it'
           '\n\r --no-grid                make output in one line')
     print()
     intro = """if you would like to save the pass to a file
-    i suggest you to run the app with --no-grid and redirect it to some path with  e.g:
-    python3 ./passlistmaker.py --no-grid pass.txt
+    i suggest you to run the app with -w and specify a directory to save the passwords e.g:
+    python3 ./passlistmaker.py -w pass.txt
     you can also see the help menu with -h
     """
     for i in intro:
         print(i,sep='',end='',flush=1)
         sleep(0.02)       
+    print()
     exit()
 
 dinamit = []
