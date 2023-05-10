@@ -1,11 +1,12 @@
-def dotaii(deraza,passw_list,dinamit):
+def dotaii(deraza, passw_list, dinamit):
     for i in range(deraza):
         for j in range(deraza):
             passw_list.append(f'{dinamit[i]}-{dinamit[j]}')
             passw_list.append(f'{dinamit[i]}{dinamit[j]}')
     return passw_list
 
-def setaii(deraza,passw_list,dinamit):
+
+def setaii(deraza, passw_list, dinamit):
     for i in range(deraza):
         for j in range(deraza):
             for g in range(deraza):
@@ -13,7 +14,8 @@ def setaii(deraza,passw_list,dinamit):
                 passw_list.append(f'{dinamit[i]}{dinamit[j]}{dinamit[g]}')
     return passw_list
 
-def chahartaii(deraza,passw_list,dinamit):
+
+def chahartaii(deraza, passw_list, dinamit):
     for i in range(deraza):
         for j in range(deraza):
             for g in range(deraza):
@@ -22,7 +24,8 @@ def chahartaii(deraza,passw_list,dinamit):
                     passw_list.append(f'{dinamit[i]}{dinamit[j]}{dinamit[g]}{dinamit[g2]}')
     return passw_list
 
-def panjtaii(deraza,passw_list,dinamit):
+
+def panjtaii(deraza, passw_list, dinamit):
     for i in range(deraza):
         for j in range(deraza):
             for g in range(deraza):
